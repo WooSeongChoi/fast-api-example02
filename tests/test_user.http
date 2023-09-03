@@ -1,0 +1,31 @@
+POST http://localhost:8000/user/signup
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "fastapi@packt.com",
+  "password": "Stro0ng!",
+  "username": "FastPackt"
+}
+
+###
+
+POST http://localhost:8000/user/signin
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "fastapi@packt.com",
+  "password": "Stro0ng!"
+}
+###
+
+
+POST http://localhost:8000/user/signin
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "fastapi@packt.com",
+  "password": "password!"
+}

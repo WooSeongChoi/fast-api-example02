@@ -1,0 +1,25 @@
+GET http://localhost:8000/event/
+Accept: application/json
+###
+
+POST http://localhost:8000/event/new/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "FastAPI Book Launch",
+  "image": "https://linktomyimage.com/image.png",
+  "description": "We will be discussing lthe contents of the FastAPI book in this event.Ensure to come with your own copy to win gifts!",
+  "tags": ["python", "fastapi", "book", "launch"],
+  "location": "Google Meet"
+}
+###
+
+GET http://localhost:8000/event/1
+Accept: application/json
+###
+
+DELETE http://localhost:8000/event/1
+Accept: application/json
+###
